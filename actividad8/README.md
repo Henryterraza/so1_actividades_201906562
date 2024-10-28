@@ -13,7 +13,7 @@
 
 4. **Desplegar un Contenedor de Nginx**
    - Crea un archivo de despliegue 
-     ```yaml
+    ```yaml
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -37,11 +37,13 @@
             ports:
             - containerPort: 5001
 
-     ```
+    ```
+
    - Aplica el despliegue usando el siguiente comando:
-     ```bash
+   
+    ```bash
      kubectl apply -f nginx-deployment.yaml
-     ```
+    ```
 
 5. **Exponer el Servicio de Nginx**
    - Crea un servicio para exponer el despliegue:
